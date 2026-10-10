@@ -1,15 +1,5 @@
-import { Hero } from "@/components/sections/Hero";
-import { About } from "@/components/sections/About";
-import { Services } from "@/components/sections/Services";
-import { Skills } from "@/components/sections/Skills";
-import { Projects } from "@/components/sections/Projects";
-import { Academy } from "@/components/sections/Academy";
-import { Journey } from "@/components/sections/Journey";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { Contact } from "@/components/sections/Contact";
 
 import { siteData } from "@/data/site";
-import { Hero } from "@/components/sections/Hero";
 import { HeroCinematic } from "@/components/cinematic/HeroCinematic";
 import { SectionCinematic } from "@/components/cinematic/SectionCinematic";
 import { About } from "@/components/sections/About";
@@ -26,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      {isCinematic && siteData.cinematic.heroSplitText ? <HeroCinematic /> : <Hero />}
+      {isCinematic && siteData.cinematic.heroSplitText ? <HeroCinematic /> : <HeroCinematic />}
       
       <SectionCinematic id="about" index={1} label="ABOUT_ME">
         <About />
