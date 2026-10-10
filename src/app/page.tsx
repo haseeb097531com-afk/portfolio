@@ -1,5 +1,6 @@
 
 import { siteData } from "@/data/site";
+import { Hero } from "@/components/sections/Hero";
 import { HeroCinematic } from "@/components/cinematic/HeroCinematic";
 import { SectionCinematic } from "@/components/cinematic/SectionCinematic";
 import { About } from "@/components/sections/About";
@@ -16,7 +17,7 @@ export default function Home() {
 
   return (
     <main>
-      {isCinematic && siteData.cinematic.heroSplitText ? <HeroCinematic /> : <HeroCinematic />}
+      {isCinematic && siteData.cinematic.heroSplitText ? <HeroCinematic /> : <Hero />}
       
       <SectionCinematic id="about" index={1} label="ABOUT_ME">
         <About />
